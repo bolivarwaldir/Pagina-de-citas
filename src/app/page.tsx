@@ -777,7 +777,13 @@ export default function Home() {
               className="w-full max-w-sm text-center"
             >
               <div className="mb-6">
-                <Sparkles className="w-10 h-10 text-gold-soft mx-auto mb-3" />
+                <motion.div
+                  animate={{ scale: [1, 1.2, 1], rotate: [0, 10, -10, 0] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                  className="inline-block"
+                >
+                  <Sparkles className="w-12 h-12 text-[#D4AF37] mx-auto mb-3 drop-shadow-[0_0_12px_rgba(212,175,55,0.6)]" />
+                </motion.div>
                 <h2 className="font-serif text-xl text-[#F5EDE6]">
                   ¿Estás segura de que quieres proponer este plan?
                 </h2>
