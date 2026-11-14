@@ -63,7 +63,7 @@ export default function InteractiveHeart({ onComplete }: InteractiveHeartProps) 
           scale: isComplete ? [1, 1.15, 1.05] : 1 + taps * 0.05,
         }}
         transition={{ type: "spring", stiffness: 500, damping: 12 }}
-        className="focus:outline-none bg-transparent border-none p-0"
+        className="focus:outline-none bg-transparent border-none p-0 touch-manipulation"
         aria-label="Toca el corazón"
       >
         <svg viewBox="0 0 100 100" className="w-48 h-48">
