@@ -46,7 +46,7 @@ export default function InteractiveHeart({ onComplete }: InteractiveHeartProps) 
 
   return (
     <div className="relative flex flex-col items-center">
-      <div className="relative flex items-center justify-center">
+      <div className="relative flex items-center justify-center" style={{background:"transparent"}}>
         {/* Particles */}
         <AnimatePresence>
           {particles.map((p) => (
@@ -73,7 +73,7 @@ export default function InteractiveHeart({ onComplete }: InteractiveHeartProps) 
         >
           <svg
             viewBox="0 0 100 100"
-            className="w-40 h-40 sm:w-48 sm:h-48 drop-shadow-lg"
+            className="w-40 h-40 sm:w-48 sm:h-48 "
             style={{ filter: `brightness(${brightness})` }}
           >
             <defs>

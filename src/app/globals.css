@@ -143,3 +143,11 @@ div.bg-\[\#1a1215\] *,
 .text-center.text-xs {
   color: #3a1a20 !important;
 }
+
+/* Force all text readable */
+h1, h2, h3, p, span, label, li {
+  color: #F5EDE6 !important;
+}
+.text-rose-wine, .text-rose-deep, [class*="text-rose"] {
+  color: #F5EDE6 !important;
+}

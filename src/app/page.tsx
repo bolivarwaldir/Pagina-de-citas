@@ -117,11 +117,14 @@ export default function Home() {
   const toggleActivity = (id: string) => {
     setFormData((prev) => {
       const exists = prev.selectedActivities.includes(id);
+      const selected = exists
+        ? prev.selectedActivities.filter((a) => a !== id)
+        : prev.selectedActivities.length < 2
+        ? [...prev.selectedActivities, id]
+        : prev.selectedActivities;
       return {
         ...prev,
-        selectedActivities: exists
-          ? prev.selectedActivities.filter((a) => a !== id)
-          : [...prev.selectedActivities, id],
+        selectedActivities: selected,
         preferQuiet: false,
       };
     });
