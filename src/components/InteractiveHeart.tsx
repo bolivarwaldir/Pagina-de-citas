@@ -94,7 +94,7 @@ export default function InteractiveHeart({ onComplete }: InteractiveHeartProps) 
             <path
               d="M50 88 C20 65, 5 45, 5 28 C5 14, 15 5, 28 5 C38 5, 46 12, 50 20 C54 12, 62 5, 72 5 C85 5, 95 14, 95 28 C95 45, 80 65, 50 88 Z"
               fill={`url(#heartGradient)`}
-              stroke="#C45C5C"
+              stroke="#D4AF37"
               strokeWidth="1.5"
               filter={isComplete ? "url(#glow)" : undefined}
               className={taps > 0 ? "heart-pulse" : ""}
@@ -137,7 +137,7 @@ export default function InteractiveHeart({ onComplete }: InteractiveHeartProps) 
           <div
             key={i}
             className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              i < taps ? "bg-rose-deep scale-110" : "bg-rose-powder/50"
+              i < taps ? "bg-[#8B3A4A] scale-110" : "bg-[#3a2a30]"
             }`}
           />
         ))}
@@ -147,7 +147,7 @@ export default function InteractiveHeart({ onComplete }: InteractiveHeartProps) 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="mt-3 text-sm text-rose-wine/70 font-light"
+          className="mt-3 text-sm text-[#E8D5C4]/70 font-light"
         >
           {maxTaps - taps} toques más...
         </motion.p>

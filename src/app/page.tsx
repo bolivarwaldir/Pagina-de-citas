@@ -53,9 +53,10 @@ export default function Home() {
     preferQuiet: false,
   });
   const [heartDone, setHeartDone] = useState(false);
+  const [showTutorial, setShowTutorial] = useState(true);
   const [isSending, setIsSending] = useState(false);
   const [sendError, setSendError] = useState<string | null>(null);
-  const [musicOn, setMusicOn] = useState(false);
+  const [musicOn, setMusicOn] = useState(true);
   const [direction, setDirection] = useState(1);
 
   useEffect(() => {
@@ -258,7 +259,7 @@ export default function Home() {
                 transition={{ delay: 0.3 }}
                 className="font-serif text-3xl sm:text-4xl text-rose-wine leading-tight mb-6"
               >
-                Hola, tú. <span className="text-rose-deep">❤️</span>
+                Hola, Amor. <span className="text-rose-deep">❤️</span>
               </motion.h1>
 
               <motion.div
