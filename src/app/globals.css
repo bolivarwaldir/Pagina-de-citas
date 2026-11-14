@@ -107,3 +107,21 @@ h1, h2, h3, p, span, label, .text-rose-wine, .text-rose-deep {
 .card-select h3, .card-select p {
   color: #F5EDE6 !important;
 }
+
+/* Summary and cards readable */
+.summary-card, .bg-white, .bg-cream, [class*="bg-"] {
+  color: #3a1a20 !important;
+}
+.summary-card p, .summary-card span, .summary-card h3 {
+  color: #3a1a20 !important;
+}
+
+/* Mood buttons selectable */
+.card-select {
+  cursor: pointer !important;
+  user-select: none;
+}
+.card-select.selected {
+  border: 2px solid #D4AF37 !important;
+  background: #2a1a20 !important;
+}

@@ -70,7 +70,7 @@ export default function DateCalendar({ selectedDate, onSelect }: DateCalendarPro
         >
           <ChevronLeft className="w-5 h-5 text-rose-deep" />
         </button>
-        <h3 className="font-serif text-lg text-white font-medium">
+        <h3 className="font-serif text-lg text-[#3a1a20] font-medium">
           {MONTHS[month]} {year}
         </h3>
         <button
@@ -87,7 +87,7 @@ export default function DateCalendar({ selectedDate, onSelect }: DateCalendarPro
         {DAYS.map((day) => (
           <div
             key={day}
-            className="text-center text-xs font-medium text-white/60 py-1"
+            className="text-center text-xs font-medium text-[#3a1a20]/60 py-1"
           >
             {day}
           </div>
@@ -118,7 +118,7 @@ export default function DateCalendar({ selectedDate, onSelect }: DateCalendarPro
                 ${selected ? "selected" : ""}
                 ${disabled ? "disabled" : "cursor-pointer"}
                 ${isToday && !selected ? "ring-1 ring-rose-powder" : ""}
-                ${!selected && !disabled ? "text-white hover:bg-[#3a2a30]" : ""}
+                ${!selected && !disabled ? "text-[#3a1a20] hover:bg-[#3a2a30]" : ""}
               `}
             >
               {day}
@@ -134,7 +134,7 @@ export default function DateCalendar({ selectedDate, onSelect }: DateCalendarPro
           animate={{ opacity: 1, y: 0 }}
           className="mt-5 text-center"
         >
-          <p className="text-sm text-white/70">Fecha elegida</p>
+          <p className="text-sm text-[#3a1a20]/70">Fecha elegida</p>
           <p className="font-serif text-rose-deep text-lg capitalize mt-0.5">
             {formatDateES(selectedDate)}
           </p>
