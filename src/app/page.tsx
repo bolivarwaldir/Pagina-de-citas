@@ -63,11 +63,27 @@ export default function Home() {
   useEffect(() => {
     const audio = document.getElementById("bg-music") as HTMLAudioElement | null;
     if (!audio) return;
-    if (musicOn) {
-      audio.play().catch(() => {});
-    } else {
-      audio.pause();
-    }
+
+    const tryPlay = () => {
+      if (musicOn) audio.play().catch(() => {});
+      else audio.pause();
+    };
+
+    tryPlay();
+
+    // Mobile browsers require a user gesture — start on first interaction
+    const unlock = () => {
+      tryPlay();
+      document.removeEventListener("touchstart", unlock);
+      document.removeEventListener("click", unlock);
+    };
+    document.addEventListener("touchstart", unlock, { once: true });
+    document.addEventListener("click", unlock, { once: true });
+
+    return () => {
+      document.removeEventListener("touchstart", unlock);
+      document.removeEventListener("click", unlock);
+    };
   }, [musicOn]);
 
   useEffect(() => {
