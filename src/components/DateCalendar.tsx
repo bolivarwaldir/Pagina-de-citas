@@ -65,17 +65,17 @@ export default function DateCalendar({ selectedDate, onSelect }: DateCalendarPro
         <button
           onClick={prevMonth}
           disabled={!canGoPrev()}
-          className="p-2 rounded-full hover:bg-rose-soft/50 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+          className="p-2 rounded-full hover:bg-[#2a1a20] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
           aria-label="Mes anterior"
         >
           <ChevronLeft className="w-5 h-5 text-rose-deep" />
         </button>
-        <h3 className="font-serif text-lg text-rose-wine font-medium">
+        <h3 className="font-serif text-lg text-white font-medium">
           {MONTHS[month]} {year}
         </h3>
         <button
           onClick={nextMonth}
-          className="p-2 rounded-full hover:bg-rose-soft/50 transition-colors"
+          className="p-2 rounded-full hover:bg-[#2a1a20] transition-colors"
           aria-label="Mes siguiente"
         >
           <ChevronRight className="w-5 h-5 text-rose-deep" />
@@ -87,7 +87,7 @@ export default function DateCalendar({ selectedDate, onSelect }: DateCalendarPro
         {DAYS.map((day) => (
           <div
             key={day}
-            className="text-center text-xs font-medium text-rose-wine/60 py-1"
+            className="text-center text-xs font-medium text-white/60 py-1"
           >
             {day}
           </div>
@@ -118,7 +118,7 @@ export default function DateCalendar({ selectedDate, onSelect }: DateCalendarPro
                 ${selected ? "selected" : ""}
                 ${disabled ? "disabled" : "cursor-pointer"}
                 ${isToday && !selected ? "ring-1 ring-rose-powder" : ""}
-                ${!selected && !disabled ? "text-rose-wine hover:bg-rose-soft/60" : ""}
+                ${!selected && !disabled ? "text-white hover:bg-[#3a2a30]" : ""}
               `}
             >
               {day}
@@ -134,7 +134,7 @@ export default function DateCalendar({ selectedDate, onSelect }: DateCalendarPro
           animate={{ opacity: 1, y: 0 }}
           className="mt-5 text-center"
         >
-          <p className="text-sm text-rose-wine/70">Fecha elegida</p>
+          <p className="text-sm text-white/70">Fecha elegida</p>
           <p className="font-serif text-rose-deep text-lg capitalize mt-0.5">
             {formatDateES(selectedDate)}
           </p>

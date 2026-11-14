@@ -69,3 +69,28 @@ body::before {
   background: linear-gradient(135deg, #1a1215 0%, #2a1a20 100%);
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
 }
+
+/* Better button styles */
+.btn, button.btn, .card-select {
+  border: 1.5px solid #D4AF37/40 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3), inset 0 1px 0 rgba(212,175,55,0.1);
+}
+button.btn:hover, .btn:hover {
+  border-color: #D4AF37 !important;
+  box-shadow: 0 4px 12px rgba(212,175,55,0.25);
+}
+
+/* Force visible buttons */
+button, .btn, a.btn {
+  background: linear-gradient(135deg, #6b2d3c 0%, #8B3A4A 100%) !important;
+  color: white !important;
+  border: 2px solid #D4AF37 !important;
+  border-radius: 9999px !important;
+  padding: 12px 24px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 15px rgba(107, 45, 60, 0.4) !important;
+}
+button:hover, .btn:hover {
+  border-color: #E8D5A3 !important;
+  transform: translateY(-1px);
+}
