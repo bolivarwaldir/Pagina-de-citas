@@ -94,3 +94,16 @@ button:hover, .btn:hover {
   border-color: #E8D5A3 !important;
   transform: translateY(-1px);
 }
+
+/* Force readable text */
+h1, h2, h3, p, span, label, .text-rose-wine, .text-rose-deep {
+  color: #F5EDE6 !important;
+}
+.text-rose-wine\/70, .text-rose-wine\/60 {
+  color: #E8D5C4 !important;
+}
+
+/* Activity cards readable */
+.card-select h3, .card-select p {
+  color: #F5EDE6 !important;
+}

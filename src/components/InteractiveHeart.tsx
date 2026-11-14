@@ -94,8 +94,8 @@ export default function InteractiveHeart({ onComplete }: InteractiveHeartProps) 
             <path
               d="M50 88 C20 65, 5 45, 5 28 C5 14, 15 5, 28 5 C38 5, 46 12, 50 20 C54 12, 62 5, 72 5 C85 5, 95 14, 95 28 C95 45, 80 65, 50 88 Z"
               fill={`url(#heartGradient)`}
-              stroke="#D4AF37"
-              strokeWidth="1.5"
+              stroke="none"
+              strokeWidth="0"
               filter={isComplete ? "url(#glow)" : undefined}
               className={taps > 0 ? "heart-pulse" : ""}
             />

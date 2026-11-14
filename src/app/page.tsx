@@ -217,13 +217,13 @@ export default function Home() {
 
       <button
         onClick={() => setMusicOn(!musicOn)}
-        className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-[#1a1215] border-2 border-[#D4AF37]/60 flex items-center justify-center shadow-lg hover:border-[#D4AF37] transition"
+        className="fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full bg-black/40 backdrop-blur-sm border border-white/20 flex items-center justify-center"
         aria-label={musicOn ? "Desactivar música" : "Activar música"}
       >
         {musicOn ? (
-          <Music2 className="w-5 h-5 text-[#D4AF37]" />
+          <Music2 className="w-5 h-5 text-white" />
         ) : (
-          <Music className="w-5 h-5 text-[#E8D5C4]/50" />
+          <Music className="w-5 h-5 text-white/50" />
         )}
       </button>
 
@@ -235,7 +235,7 @@ export default function Home() {
           }
         }}
         loop
-        src="https://cdn.pixabay.com/download/audio/2022/03/10/audio_c8c8a73467.mp3?filename=relaxing-ambient-11157.mp3"
+        src="/romantic-ambient.mp3"
         className="hidden"
       />
 
