@@ -7,6 +7,7 @@
 :root {
   --bg-deep: #0f0a0c;
   --gold: #D4AF37;
+  --text: #F5EDE6;
 }
 
 * { box-sizing: border-box; }
@@ -15,23 +16,17 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   background: #0f0a0c;
   min-height: 100vh;
-  color: #ffffff !important;
+  color: #F5EDE6;
 }
 
-/* FORCE ALL TEXT WHITE */
-*, *::before, *::after {
-  color: #ffffff !important;
-}
+h1, h2, h3 { color: #F5EDE6; }
+p, span, label { color: #E8D5C4; }
 
-h1, h2, h3, p, span, label, a, button, li, div, strong {
-  color: #ffffff !important;
-}
-
-/* Buttons keep their style */
 button, .btn {
-  background: #6b2d3c !important;
-  border: 2px solid #D4AF37 !important;
-  color: #ffffff !important;
-  border-radius: 9999px !important;
-  padding: 12px 24px !important;
+  background: #6b2d3c;
+  border: 2px solid #D4AF37;
+  color: #ffffff;
+  border-radius: 9999px;
+  padding: 12px 24px;
+  font-weight: 600;
 }
