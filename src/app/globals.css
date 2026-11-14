@@ -151,3 +151,11 @@ h1, h2, h3, p, span, label, li {
 .text-rose-wine, .text-rose-deep, [class*="text-rose"] {
   color: #F5EDE6 !important;
 }
+
+/* FORCE ALL TEXT WHITE */
+* {
+  color: #ffffff !important;
+}
+h1, h2, h3, p, span, label, a, button, li, div {
+  color: #ffffff !important;
+}
