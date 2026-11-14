@@ -125,3 +125,21 @@ h1, h2, h3, p, span, label, .text-rose-wine, .text-rose-deep {
   border: 2px solid #D4AF37 !important;
   background: #2a1a20 !important;
 }
+
+/* Summary card must be readable */
+.bg-\[\#1a1215\] p, .bg-\[\#1a1215\] span, .bg-\[\#1a1215\] h3 {
+  color: #F5EDE6 !important;
+}
+
+/* Force all summary text readable */
+div.bg-\[\#1a1215\] *, 
+.space-y-5 p, 
+.space-y-5 span {
+  color: #F5EDE6 !important;
+}
+
+/* Calendar selected date and month */
+.font-serif.text-lg, 
+.text-center.text-xs {
+  color: #3a1a20 !important;
+}

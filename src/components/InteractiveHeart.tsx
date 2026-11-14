@@ -46,7 +46,7 @@ export default function InteractiveHeart({ onComplete }: InteractiveHeartProps) 
 
   return (
     <div className="relative flex flex-col items-center">
-      <div className="relative w-48 h-48 sm:w-56 sm:h-56 flex items-center justify-center">
+      <div className="relative flex items-center justify-center">
         {/* Particles */}
         <AnimatePresence>
           {particles.map((p) => (

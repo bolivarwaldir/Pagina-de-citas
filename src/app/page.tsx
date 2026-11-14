@@ -262,7 +262,7 @@ export default function Home() {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.3 }}
-                className="font-serif text-3xl sm:text-4xl text-rose-wine leading-tight mb-6"
+                className="font-serif text-3xl sm:text-4xl text-[#F5EDE6] leading-tight mb-6"
               >
                 Hola, Amor. <span className="text-rose-deep">❤️</span>
               </motion.h1>
@@ -271,7 +271,7 @@ export default function Home() {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.45 }}
-                className="space-y-4 text-rose-wine/80 font-light leading-relaxed text-[15px] sm:text-base"
+                className="space-y-4 text-[#F5EDE6]/80 font-light leading-relaxed text-[15px] sm:text-base"
               >
                 <p>Preparé algo pequeño para ti.</p>
                 <p>
@@ -310,7 +310,7 @@ export default function Home() {
               transition={{ duration: 0.45 }}
               className="w-full max-w-md text-center"
             >
-              <p className="font-serif text-lg text-rose-wine/80 italic mb-2">
+              <p className="font-serif text-lg text-[#F5EDE6]/80 italic mb-2">
                 Dicen que los pequeños detalles hacen grandes momentos...
               </p>
 
@@ -320,7 +320,7 @@ export default function Home() {
                 />
               </div>
 
-              <p className="text-rose-wine/70 text-sm mb-6 max-w-xs mx-auto">
+              <p className="text-[#F5EDE6]/70 text-sm mb-6 max-w-xs mx-auto">
                 Tengo algo para ti. Pero primero, tendrás que darle un poquito
                 de amor a este corazón.
               </p>
@@ -356,11 +356,11 @@ export default function Home() {
               transition={{ duration: 0.45 }}
               className="w-full max-w-md text-center"
             >
-              <h2 className="font-serif text-2xl sm:text-3xl text-rose-wine mb-6">
+              <h2 className="font-serif text-2xl sm:text-3xl text-[#F5EDE6] mb-6">
                 Tengo una propuesta para ti...
               </h2>
 
-              <div className="space-y-4 text-rose-wine/80 font-light leading-relaxed text-[15px] text-left">
+              <div className="space-y-4 text-[#F5EDE6]/80 font-light leading-relaxed text-[15px] text-left">
                 <p>
                   Sé que tus días pueden estar llenos de responsabilidades,
                   trabajo, universidad, pendientes y muchas otras cosas.
@@ -407,10 +407,10 @@ export default function Home() {
               className="w-full max-w-md"
             >
               <div className="text-center mb-6">
-                <h2 className="font-serif text-2xl text-rose-wine mb-1">
+                <h2 className="font-serif text-2xl text-[#F5EDE6] mb-1">
                   Agenda una cita con tu hombre ❤️
                 </h2>
-                <p className="text-sm text-rose-wine/70">
+                <p className="text-sm text-[#F5EDE6]/70">
                   Tú eliges el momento. Yo me encargo de hacer que valga la
                   pena.
                 </p>
@@ -425,7 +425,7 @@ export default function Home() {
                 />
               </div>
 
-              <p className="text-center text-xs text-rose-wine/60 mt-5 px-4 leading-relaxed">
+              <p className="text-center text-xs text-[#F5EDE6]/60 mt-5 px-4 leading-relaxed">
                 No importa si es mañana, en unos días o cuando tengas un
                 espacio. Lo importante es que los dos tengamos ganas.
               </p>
@@ -454,13 +454,13 @@ export default function Home() {
               className="w-full max-w-lg"
             >
               <div className="text-center mb-6">
-                <h2 className="font-serif text-2xl text-rose-wine mb-1">
+                <h2 className="font-serif text-2xl text-[#F5EDE6] mb-1">
                   Ahora viene la parte interesante...
                 </h2>
-                <p className="text-sm text-rose-wine/70">
+                <p className="text-sm text-[#F5EDE6]/70">
                   ¿Qué se te antoja hacer conmigo?
                 </p>
-                <p className="text-xs text-rose-wine/50 mt-2">
+                <p className="text-xs text-[#E8D5C4] mt-2">
                   Puedes elegir una o varias opciones
                 </p>
               </div>
@@ -475,10 +475,10 @@ export default function Home() {
                 )}
               >
                 <span className="text-lg">🌿</span>
-                <span className="ml-2 font-medium text-rose-wine">
+                <span className="ml-2 font-medium text-[#F5EDE6]">
                   Hoy prefiero algo tranquilo
                 </span>
-                <p className="text-xs text-rose-wine/60 mt-1 ml-7">
+                <p className="text-xs text-[#F5EDE6]/60 mt-1 ml-7">
                   Estoy cansada o simplemente quiero un plan relajado
                 </p>
               </button>
@@ -490,7 +490,7 @@ export default function Home() {
                   >
                 ).map((cat) => (
                   <div key={cat}>
-                    <h3 className="text-xs font-semibold uppercase tracking-wider text-rose-wine/50 mb-2 px-1">
+                    <h3 className="text-xs font-semibold uppercase tracking-wider text-[#E8D5C4] mb-2 px-1">
                       {categoryLabels[cat]}
                     </h3>
                     <div className="grid grid-cols-1 gap-2">
@@ -516,10 +516,10 @@ export default function Home() {
                                   {act.emoji}
                                 </span>
                                 <div>
-                                  <p className="font-medium text-rose-wine text-sm">
+                                  <p className="font-medium text-[#F5EDE6] text-sm">
                                     {act.title}
                                   </p>
-                                  <p className="text-xs text-rose-wine/55 mt-0.5">
+                                  <p className="text-xs text-[#F5EDE6]/55 mt-0.5">
                                     {act.description}
                                   </p>
                                 </div>
@@ -564,10 +564,10 @@ export default function Home() {
               className="w-full max-w-md"
             >
               <div className="text-center mb-6">
-                <h2 className="font-serif text-2xl text-rose-wine mb-1">
+                <h2 className="font-serif text-2xl text-[#F5EDE6] mb-1">
                   Una última cosita...
                 </h2>
-                <p className="text-sm text-rose-wine/70">
+                <p className="text-sm text-[#F5EDE6]/70">
                   ¿Qué tipo de cita te provoca en este momento?
                 </p>
               </div>
@@ -587,7 +587,7 @@ export default function Home() {
                     )}
                   >
                     <span className="text-xl block mb-1">{opt.emoji}</span>
-                    <span className="text-xs font-medium text-rose-wine">
+                    <span className="text-xs font-medium text-[#F5EDE6]">
                       {opt.label}
                     </span>
                   </button>
@@ -596,7 +596,7 @@ export default function Home() {
 
               <div className="space-y-4">
                 <div>
-                  <label className="block text-sm text-rose-wine/70 mb-1.5">
+                  <label className="block text-sm text-[#F5EDE6]/70 mb-1.5">
                     ¿Hay algo que te gustaría hacer y que todavía no hayamos
                     mencionado?
                   </label>
@@ -610,12 +610,12 @@ export default function Home() {
                     }
                     placeholder="Opcional..."
                     rows={2}
-                    className="w-full px-4 py-3 rounded-2xl border border-rose-powder/40 bg-cream/70 text-sm text-rose-wine placeholder:text-rose-wine/40 focus:outline-none focus:border-rose-deep/50 focus:ring-2 focus:ring-rose-powder/30 resize-none"
+                    className="w-full px-4 py-3 rounded-2xl border border-rose-powder/40 bg-cream/70 text-sm text-[#F5EDE6] placeholder:text-[#F5EDE6]/40 focus:outline-none focus:border-rose-deep/50 focus:ring-2 focus:ring-rose-powder/30 resize-none"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm text-rose-wine/70 mb-1.5">
+                  <label className="block text-sm text-[#F5EDE6]/70 mb-1.5">
                     ¿Alguna cosita que deba saber para hacer de este momento
                     algo especial?
                   </label>
@@ -629,7 +629,7 @@ export default function Home() {
                     }
                     placeholder="Opcional... preferencias, alergias, sueños..."
                     rows={2}
-                    className="w-full px-4 py-3 rounded-2xl border border-rose-powder/40 bg-cream/70 text-sm text-rose-wine placeholder:text-rose-wine/40 focus:outline-none focus:border-rose-deep/50 focus:ring-2 focus:ring-rose-powder/30 resize-none"
+                    className="w-full px-4 py-3 rounded-2xl border border-rose-powder/40 bg-cream/70 text-sm text-[#F5EDE6] placeholder:text-[#F5EDE6]/40 focus:outline-none focus:border-rose-deep/50 focus:ring-2 focus:ring-rose-powder/30 resize-none"
                   />
                 </div>
               </div>
@@ -658,14 +658,14 @@ export default function Home() {
               className="w-full max-w-md"
             >
               <div className="text-center mb-6">
-                <h2 className="font-serif text-2xl text-rose-wine mb-1">
+                <h2 className="font-serif text-2xl text-[#F5EDE6] mb-1">
                   Creo que tenemos un plan... ❤️
                 </h2>
               </div>
 
-              <div className="bg-cream/90 backdrop-blur rounded-3xl p-6 shadow-card border border-rose-powder/30 space-y-5">
+              <div className="bg-[#1a1215] backdrop-blur rounded-3xl p-6 shadow-card border border-rose-powder/30 space-y-5">
                 <div>
-                  <p className="text-xs uppercase tracking-wider text-rose-wine/50 mb-1">
+                  <p className="text-xs uppercase tracking-wider text-[#E8D5C4] mb-1">
                     Fecha
                   </p>
                   <p className="font-serif text-rose-deep capitalize">
@@ -676,11 +676,11 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <p className="text-xs uppercase tracking-wider text-rose-wine/50 mb-2">
+                  <p className="text-xs uppercase tracking-wider text-[#E8D5C4] mb-2">
                     Actividades
                   </p>
                   {formData.preferQuiet ? (
-                    <p className="text-sm text-rose-wine">🌿 Algo tranquilo</p>
+                    <p className="text-sm text-[#F5EDE6]">🌿 Algo tranquilo</p>
                   ) : (
                     <ul className="space-y-1.5">
                       {activities
@@ -690,7 +690,7 @@ export default function Home() {
                         .map((a) => (
                           <li
                             key={a.id}
-                            className="text-sm text-rose-wine flex gap-2"
+                            className="text-sm text-[#F5EDE6] flex gap-2"
                           >
                             <span>{a.emoji}</span>
                             <span>{a.title}</span>
@@ -701,10 +701,10 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <p className="text-xs uppercase tracking-wider text-rose-wine/50 mb-1">
+                  <p className="text-xs uppercase tracking-wider text-[#E8D5C4] mb-1">
                     Tipo de cita
                   </p>
-                  <p className="text-sm text-rose-wine">
+                  <p className="text-sm text-[#F5EDE6]">
                     {moodOptions.find((m) => m.id === formData.mood)?.emoji}{" "}
                     {moodOptions.find((m) => m.id === formData.mood)?.label}
                   </p>
@@ -712,10 +712,10 @@ export default function Home() {
 
                 {formData.extraActivity && (
                   <div>
-                    <p className="text-xs uppercase tracking-wider text-rose-wine/50 mb-1">
+                    <p className="text-xs uppercase tracking-wider text-[#E8D5C4] mb-1">
                       Algo más
                     </p>
-                    <p className="text-sm text-rose-wine italic">
+                    <p className="text-sm text-[#F5EDE6] italic">
                       &ldquo;{formData.extraActivity}&rdquo;
                     </p>
                   </div>
@@ -723,17 +723,17 @@ export default function Home() {
 
                 {formData.specialNote && (
                   <div>
-                    <p className="text-xs uppercase tracking-wider text-rose-wine/50 mb-1">
+                    <p className="text-xs uppercase tracking-wider text-[#E8D5C4] mb-1">
                       Nota especial
                     </p>
-                    <p className="text-sm text-rose-wine italic">
+                    <p className="text-sm text-[#F5EDE6] italic">
                       &ldquo;{formData.specialNote}&rdquo;
                     </p>
                   </div>
                 )}
               </div>
 
-              <p className="text-center text-sm text-rose-wine/70 mt-6 leading-relaxed">
+              <p className="text-center text-sm text-[#F5EDE6]/70 mt-6 leading-relaxed">
                 Ahora solo falta una cosita: hacer que este pequeño plan se
                 convierta en un bonito recuerdo.
               </p>
@@ -762,7 +762,7 @@ export default function Home() {
             >
               <div className="mb-6">
                 <Sparkles className="w-10 h-10 text-gold-soft mx-auto mb-3" />
-                <h2 className="font-serif text-xl text-rose-wine">
+                <h2 className="font-serif text-xl text-[#F5EDE6]">
                   ¿Estás segura de que quieres proponer este plan?
                 </h2>
               </div>
@@ -826,11 +826,11 @@ export default function Home() {
                 ))}
               </div>
 
-              <h2 className="font-serif text-2xl sm:text-3xl text-rose-wine mb-6">
+              <h2 className="font-serif text-2xl sm:text-3xl text-[#F5EDE6] mb-6">
                 ¡Tenemos una cita pendiente! ❤️
               </h2>
 
-              <div className="space-y-4 text-rose-wine/80 font-light leading-relaxed text-[15px] text-left">
+              <div className="space-y-4 text-[#F5EDE6]/80 font-light leading-relaxed text-[15px] text-left">
                 <p>
                   Gracias por regalarme un espacio entre tantas cosas que hacen
                   parte de tus días.

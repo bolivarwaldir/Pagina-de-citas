@@ -70,7 +70,7 @@ export default function DateCalendar({ selectedDate, onSelect }: DateCalendarPro
         >
           <ChevronLeft className="w-5 h-5 text-rose-deep" />
         </button>
-        <h3 className="font-serif text-lg text-[#3a1a20] font-medium">
+        <h3 className="font-serif text-lg text-[#3a1a20] font-medium" style={{color:"#3a1a20"}}>
           {MONTHS[month]} {year}
         </h3>
         <button
@@ -87,7 +87,7 @@ export default function DateCalendar({ selectedDate, onSelect }: DateCalendarPro
         {DAYS.map((day) => (
           <div
             key={day}
-            className="text-center text-xs font-medium text-[#3a1a20]/60 py-1"
+            className="text-center text-xs font-medium py-1" style={{color:"#3a1a20"}}
           >
             {day}
           </div>
