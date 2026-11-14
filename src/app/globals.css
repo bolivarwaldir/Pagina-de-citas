@@ -30,3 +30,16 @@ button, .btn {
   padding: 12px 24px;
   font-weight: 600;
 }
+
+/* Mobile consistent sizing */
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+  h1, h2 {
+    font-size: 1.75rem !important;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+}
