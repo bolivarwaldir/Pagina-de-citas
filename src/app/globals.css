@@ -6,156 +6,32 @@
 
 :root {
   --bg-deep: #0f0a0c;
-  --bg-card: #1a1215;
-  --burgundy: #6b2d3c;
-  --wine: #8B3A4A;
-  --purple-deep: #4a2c5a;
   --gold: #D4AF37;
-  --gold-soft: #E8D5A3;
-  --cream: #F5EDE6;
-  --text-soft: #E8D5C4;
 }
 
-* {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-}
-
-html { scroll-behavior: smooth; }
+* { box-sizing: border-box; }
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background: radial-gradient(ellipse at top, #1a0f12 0%, #0f0a0c 50%, #0a0608 100%);
+  background: #0f0a0c;
   min-height: 100vh;
-  color: var(--text-soft);
-  overflow-x: hidden;
-}
-
-/* Sparkle background */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: radial-gradient(2px 2px at 20% 30%, #D4AF37 0%, transparent 50%),
-                    radial-gradient(1px 1px at 70% 20%, #E8D5A3 0%, transparent 40%),
-                    radial-gradient(1.5px 1.5px at 40% 70%, #D4AF37 0%, transparent 50%);
-  background-size: 200px 200px, 300px 300px, 250px 250px;
-  opacity: 0.15;
-  pointer-events: none;
-  z-index: 0;
-}
-
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #1a1215; }
-::-webkit-scrollbar-thumb { background: #6b2d3c; border-radius: 3px; }
-
-::selection { background: #6b2d3c; color: #F5EDE6; }
-
-.heart-pulse { animation: heartFill 0.4s ease-out; }
-@keyframes heartFill {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.15); }
-  100% { transform: scale(1); }
-}
-
-.card-select {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  background: #1a1215;
-  border: 1px solid #3a2a30;
-}
-.card-select:hover { transform: translateY(-2px); border-color: #D4AF37; }
-.card-select.selected {
-  border-color: #D4AF37;
-  background: linear-gradient(135deg, #1a1215 0%, #2a1a20 100%);
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-}
-
-/* Better button styles */
-.btn, button.btn, .card-select {
-  border: 1.5px solid #D4AF37/40 !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3), inset 0 1px 0 rgba(212,175,55,0.1);
-}
-button.btn:hover, .btn:hover {
-  border-color: #D4AF37 !important;
-  box-shadow: 0 4px 12px rgba(212,175,55,0.25);
-}
-
-/* Force visible buttons */
-button, .btn, a.btn {
-  background: linear-gradient(135deg, #6b2d3c 0%, #8B3A4A 100%) !important;
-  color: white !important;
-  border: 2px solid #D4AF37 !important;
-  border-radius: 9999px !important;
-  padding: 12px 24px !important;
-  font-weight: 600 !important;
-  box-shadow: 0 4px 15px rgba(107, 45, 60, 0.4) !important;
-}
-button:hover, .btn:hover {
-  border-color: #E8D5A3 !important;
-  transform: translateY(-1px);
-}
-
-/* Force readable text */
-h1, h2, h3, p, span, label, .text-rose-wine, .text-rose-deep {
-  color: #F5EDE6 !important;
-}
-.text-rose-wine\/70, .text-rose-wine\/60 {
-  color: #E8D5C4 !important;
-}
-
-/* Activity cards readable */
-.card-select h3, .card-select p {
-  color: #F5EDE6 !important;
-}
-
-/* Summary and cards readable */
-.summary-card, .bg-white, .bg-cream, [class*="bg-"] {
-  color: #3a1a20 !important;
-}
-.summary-card p, .summary-card span, .summary-card h3 {
-  color: #3a1a20 !important;
-}
-
-/* Mood buttons selectable */
-.card-select {
-  cursor: pointer !important;
-  user-select: none;
-}
-.card-select.selected {
-  border: 2px solid #D4AF37 !important;
-  background: #2a1a20 !important;
-}
-
-/* Summary card must be readable */
-.bg-\[\#1a1215\] p, .bg-\[\#1a1215\] span, .bg-\[\#1a1215\] h3 {
-  color: #F5EDE6 !important;
-}
-
-/* Force all summary text readable */
-div.bg-\[\#1a1215\] *, 
-.space-y-5 p, 
-.space-y-5 span {
-  color: #F5EDE6 !important;
-}
-
-/* Calendar selected date and month */
-.font-serif.text-lg, 
-.text-center.text-xs {
-  color: #3a1a20 !important;
-}
-
-/* Force all text readable */
-h1, h2, h3, p, span, label, li {
-  color: #F5EDE6 !important;
-}
-.text-rose-wine, .text-rose-deep, [class*="text-rose"] {
-  color: #F5EDE6 !important;
+  color: #ffffff !important;
 }
 
 /* FORCE ALL TEXT WHITE */
-* {
+*, *::before, *::after {
   color: #ffffff !important;
 }
-h1, h2, h3, p, span, label, a, button, li, div {
+
+h1, h2, h3, p, span, label, a, button, li, div, strong {
   color: #ffffff !important;
+}
+
+/* Buttons keep their style */
+button, .btn {
+  background: #6b2d3c !important;
+  border: 2px solid #D4AF37 !important;
+  color: #ffffff !important;
+  border-radius: 9999px !important;
+  padding: 12px 24px !important;
 }

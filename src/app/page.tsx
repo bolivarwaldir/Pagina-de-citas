@@ -194,9 +194,6 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col relative overflow-hidden">
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-rose-pastel/20 blur-3xl" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-beige-soft/30 blur-3xl" />
-        <div className="absolute top-[40%] right-[-5%] w-[30%] h-[30%] rounded-full bg-rose-powder/15 blur-3xl" />
       </div>
 
       {screen !== "welcome" && screen !== "success" && (
