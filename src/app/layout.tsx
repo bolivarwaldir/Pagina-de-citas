@@ -24,7 +24,18 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
       </head>
-      <body className="min-h-screen antialiased">{children}</body>
+      <body className="min-h-screen antialiased">
+        <script dangerouslySetInnerHTML={{__html: `
+          (function() {
+            var meta = document.querySelector('meta[name="viewport"]');
+            if (meta) {
+              meta.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no');
+            }
+            document.documentElement.style.zoom = '1';
+          })();
+        `}} />
+        {children}
+      </body>
     </html>
   );
 }
